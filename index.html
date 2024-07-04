@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    @media screen and (min-width:325px) and (max-width:375px){
+        h1{
+         color:red;   
+        }
+        body{
+            background-color: aqua;
+        }
+    }
+    [type~=submit]{
+        margin-left: 12vw;
+        
+    }
+    [type~=text]{
+        margin-left: 2.5vw;
+        color: red;
+    }
+    input{
+        border: 2px solid;
+    }
+    [id~=lname]{
+        margin-left: 3vw;
+    }
+    [type~=email]{
+        margin-left: 4.7vw;
+        color: blue;
+    }
+    [type$=tel]{
+        margin-left: 4.2vw;
+        color: blueviolet;
+    }
+    fieldset{
+        width: 30vw;
+        border: 1vw solid;
+    }
+    [type~=submit]:hover{
+        color:  red ;
+        transform: perspective(800px) rotateY(30deg);
+    }
+    
+
+
+</style>
+<body>
+    <fieldset>
+        <legend><h1>Form</h1></legend>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email :</label>    
+            <input type="email" id="email" name="email"><br><br>
+            <label for="contact">contact:</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}"><br><br>
+            <input type="submit">     
+        </form>
+    </fieldset>
+</body>
+</html>
